@@ -75,7 +75,7 @@ The AI client sends commands to this server, and the server talks to your databa
 ### 1. Clone and build
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/database-explorer-mcp.git
+git clone https://github.com/nandanosql/database-explorer-mcp.git
 cd database-explorer-mcp
 npm install
 npm run build
