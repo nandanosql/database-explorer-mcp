@@ -1,0 +1,67 @@
+{
+  "name": "database-explorer-mcp",
+  "version": "1.1.0",
+  "description": "A universal MCP server for exploring and querying PostgreSQL, MySQL, SQLite, and MongoDB databases",
+  "type": "module",
+  "main": "build/index.js",
+  "bin": {
+    "database-explorer-mcp": "build/index.js"
+  },
+  "files": [
+    "build",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "start": "node build/index.js",
+    "dev": "tsc --watch",
+    "test": "npm run build && node --test tests/integration.test.js",
+    "prepublishOnly": "npm run build && npm test"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "database",
+    "postgresql",
+    "mysql",
+    "sqlite",
+    "mongodb",
+    "ai",
+    "llm",
+    "claude",
+    "cursor",
+    "copilot",
+    "database-explorer",
+    "schema",
+    "erd"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/YOUR_USERNAME/database-explorer-mcp"
+  },
+  "homepage": "https://github.com/YOUR_USERNAME/database-explorer-mcp#readme",
+  "bugs": {
+    "url": "https://github.com/YOUR_USERNAME/database-explorer-mcp/issues"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.0",
+    "better-sqlite3": "^11.0.0",
+    "mongodb": "^6.12.0",
+    "mysql2": "^3.12.0",
+    "pg": "^8.13.0",
+    "zod": "^3.24.0"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.0",
+    "@types/node": "^22.0.0",
+    "@types/pg": "^8.11.0",
+    "typescript": "^5.7.0"
+  }
+}

@@ -1,0 +1,6 @@
+node_modules/
+build/
+*.js.map
+*.d.ts
+.env
+.DS_Store
